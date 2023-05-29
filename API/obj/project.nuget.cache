@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RvvgixOgOww6kFy0IVX3tO49zpUDBHfauNic/PMVvraSxnMWiwkL9hR69K29RC0ns/DSx6uy/VEIIAVBySN2fg==",
+  "dgSpecHash": "z+jxT/gAbAAeDVDVbO9ut8fhsshxhowoO9dlcKbL5zKj/B1UoJUfI4RsjJa99O+M2/2FiMBjC4I/s78e8qpevQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\deivi\\projects\\udemy\\Reactivities\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\deivi\\projects\\udemy\\Reactivities\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\deivi\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\deivi\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.3\\microsoft.data.sqlite.core.7.0.3.nupkg.sha512",
