@@ -1,10 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "z+jxT/gAbAAeDVDVbO9ut8fhsshxhowoO9dlcKbL5zKj/B1UoJUfI4RsjJa99O+M2/2FiMBjC4I/s78e8qpevQ==",
+  "dgSpecHash": "kGR2O10GV53xO4o0zTmADJ70gcyqFX+JW0pZvkPEsS73eBBcha9PXnmPBKIL5MF1ogTcr9kGwcOj/J/kCjDDBw==",
   "success": true,
   "projectFilePath": "C:\\Users\\deivi\\projects\\udemy\\Reactivities\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\deivi\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\deivi\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\deivi\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\deivi\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\deivi\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\deivi\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "C:\\Users\\deivi\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\deivi\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.3\\microsoft.data.sqlite.core.7.0.3.nupkg.sha512",
     "C:\\Users\\deivi\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.3\\microsoft.entityframeworkcore.7.0.3.nupkg.sha512",
     "C:\\Users\\deivi\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.3\\microsoft.entityframeworkcore.abstractions.7.0.3.nupkg.sha512",
