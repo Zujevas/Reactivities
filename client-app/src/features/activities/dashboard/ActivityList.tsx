@@ -2,19 +2,20 @@ import React, { useState, SyntheticEvent } from "react";
 import { Button, Item, Label, Segment } from "semantic-ui-react";
 import { useStore } from "../../../app/api/stores/store";
 import { observer } from "mobx-react-lite";
+import { Link } from "react-router-dom";
 
-export default observer( function ActivityList() {
+export default observer(function ActivityList() {
+  const { activityStore } = useStore();
+  const { deleteActivity, activitiesByDate, loading } = activityStore;
+  const [target, setTarget] = useState("");
 
-const {activityStore} = useStore();
-const {deleteActivity,activitiesByDate,loading} = activityStore;
-const [target, setTarget] = useState('');
-
-function handleActivityDelete(e: SyntheticEvent<HTMLButtonElement>, id:string){
-  setTarget(e.currentTarget.name);
-  deleteActivity(id);
-
-}
-
+  function handleActivityDelete(
+    e: SyntheticEvent<HTMLButtonElement>,
+    id: string
+  ) {
+    setTarget(e.currentTarget.name);
+    deleteActivity(id);
+  }
 
   return (
     <Segment>
@@ -31,15 +32,21 @@ function handleActivityDelete(e: SyntheticEvent<HTMLButtonElement>, id:string){
                 </div>
               </Item.Description>
               <Item.Extra>
-                <Button onClick={() => activityStore.selectActivity(activity.id)} floated="right" content="view" color="blue"></Button>
-                <Button 
-                name ={activity.id}
-                loading={loading && target === activity.id} 
-                onClick={(e) => handleActivityDelete(e, activity.id)} 
-                floated="right" 
-                content="Delete" 
-                color="red">
-                </Button>
+                <Button
+                  as={Link}
+                  to={`/activities/${activity.id}`}
+                  floated="right"
+                  content="view"
+                  color="blue"
+                ></Button>
+                <Button
+                  name={activity.id}
+                  loading={loading && target === activity.id}
+                  onClick={(e) => handleActivityDelete(e, activity.id)}
+                  floated="right"
+                  content="Delete"
+                  color="red"
+                ></Button>
                 <Label basic content={activity.category} />
               </Item.Extra>
             </Item.Content>
@@ -48,4 +55,4 @@ function handleActivityDelete(e: SyntheticEvent<HTMLButtonElement>, id:string){
       </Item.Group>
     </Segment>
   );
-})
+});
